@@ -1,0 +1,1 @@
+Yes Generator in javascript are iterable. We can use next() to iterate .

@@ -1,0 +1,5 @@
+Generator is a special kind of function which can return values multiple times every time we call it until yield statements finish.
+Whenever we call the next function it runs the code starting from the previously executed statement until the next yield statement 
+or until it reaches the end.
+
+Regular Function - It does not have any yield statement and it only runs the entire code at once.
