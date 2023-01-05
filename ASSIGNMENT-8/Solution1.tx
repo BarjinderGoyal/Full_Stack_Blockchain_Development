@@ -1,0 +1,1 @@
+The set cannot contain the same value more than once. If we try to push a value that is already in the set , it does nothing.

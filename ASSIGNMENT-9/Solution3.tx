@@ -1,0 +1,15 @@
+Lexical Scope - Any inner function can have access to its outer scope variable
+ 
+ Example- 
+
+function outer(){
+    var b=10;
+    function inner(){
+        console.log(b)
+    }
+}
+
+In this example variable b is in lexical scope with respect to inner function.
+
+
+Clouser- inner function combine with its lexical scope is closure.

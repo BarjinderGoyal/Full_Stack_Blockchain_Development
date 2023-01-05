@@ -1,0 +1,45 @@
+
+The region where variable can be accessed is what we called  the scope of the variable
+ whereas closure is a function that contain the reference of the outer scope variable. 
+
+
+
+SCOPE
+Three types of scope in Javascript
+a) Global scope - Any function can access or use the global scope variable
+b) Local scope - Variables in local scope is only access by its parent function.
+   for example 
+     function first(){
+        var a= 5;
+        console.log(a)
+     }
+
+     function second(){
+        console.log(a)
+     }
+
+     The second function try to access 'a' variable but it throw error 
+     becuase variable a is defined in local scope 
+     and only access by its parent function.
+
+
+     c) block scope - let & const have block scope.
+        {
+            let a= 5;
+            console.log(a)
+        }
+
+        variable a is not access by any function  out of block.
+    
+    CLOSURE
+     function along with its lexical scope is known as CLOSURE
+
+       Example
+         function outer(){
+            var a=5;
+            function inner(){
+                console.log(a);
+            }
+         }
+
+         
