@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #click{
+            background-color:lightcoral ;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="text"></h2>
+    <button id ="click" onclick="changeText()">CHANGE TEXT</button>
+</body>
+<script>
+   function changeText(){
+    document.getElementById("text").innerHTML="Hello World"
+    document.getElementById("text").style.color="red"
+    document.getElementById("text").style.fontWeight="bold"
+    document.getElementById("text").style.textTransform="upperCase"
+   }
+   
+</script>
+</html>

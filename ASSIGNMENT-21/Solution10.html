@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body2>
+    <span id="container">
+        <p id="1">1 P Tag</p>
+        <p id="2">2 P Tag</p>
+        <p id="3">3 P Tag</p>
+        <p id="4">4 P Tag</p>
+        <p id="5">5 P Tag</p>
+    </span>
+
+    <button id="total">Total-P-Tag</button>
+    <button id="create">Create-P-Tag</button>
+
+
+    <h5 id="result"></h5>
+    </body>
+    <script>
+
+        document.getElementById("create").style.background = "lightblue"
+        document.getElementById("create").addEventListener("click", () => {
+            var total = document.getElementsByTagName("p");
+            var p = document.createElement("p")
+            p.textContent = `${total.length + 1} P Tag`
+            document.getElementById("container").appendChild(p)
+
+        })
+
+        document.getElementById("total").style.background = "red"
+        document.getElementById("total").addEventListener("click", () => {
+            var total = document.getElementsByTagName("p");
+            document.getElementById("result").innerHTML = `Total P tag is : ${total.length}`;
+        })
+    </script>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="createTag">createTag</button>
+</body>
+<script>
+    document.getElementById("createTag").addEventListener("click",()=>{
+        var h4= document.createElement("h4");
+        h4.setAttribute("id","h4Tag")
+        document.body.appendChild(h4);
+        document.getElementById("h4Tag").innerHTML="h4 Tag is created"
+        document.getElementById("h4Tag").style.color ="lightblue"
+        document.getElementById("h4Tag").style.padding = "20px"
+        document.getElementById("h4Tag").style.width ="400px"
+        document.getElementById("h4Tag").style.border =  "2px solid black"
+        document.getElementById("h4Tag").style.fontSize = "30px"
+        
+    })
+   
+</script>
+</html>

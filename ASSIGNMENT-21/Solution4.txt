@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<p class="text" >Hello World!</p>
+
+<script>
+
+    document.getElementById("text").innerHTML = "Hi JS DOM!";
+   
+    </script>
+
+</body>
+
+
+</html>
+
+
+ANSWER=> text is class and in the use getElementById  is used that is wrong

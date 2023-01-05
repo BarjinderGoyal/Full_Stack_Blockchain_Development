@@ -1,0 +1,1 @@
+filter() is higher order function because it take callback function as an argument.

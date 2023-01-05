@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="conatiner">
+        First Value: <input id="first" type="text">
+        <br><br>
+        Second Value: <input id="second" type="text">
+        <br><br>
+        <button id="add" onclick="add()">ADD</button>
+        <br><br>
+        <h2 id="result"></h2>
+        </div>
+</body>
+<script>
+    function add() {
+        var a = parseInt(document.getElementById("first").value)
+        var b = parseInt(document.getElementById("second").value)
+        let c = a + b
+        document.getElementById("result").innerHTML = `RESULT : ${c}`
+    }
+</script>
+
+
+</html>

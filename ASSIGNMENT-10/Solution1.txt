@@ -1,0 +1,13 @@
+HIGHER ORDER FUNCTION - function which take other function as agrument.
+CALLBACK FUNCTION -  function which get passed as a argument of another function.
+
+
+function add(a,b){
+    return a+b;
+}
+
+function calculate(a,b,add){
+    return(add(a,b));
+}
+
+ add() is callback function and calculate() is higher order function
